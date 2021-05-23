@@ -76,8 +76,13 @@ class _WorrySetState extends State<WorrySet> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal:20.0),
                         child: TextField(
+                          obscureText: _isHidden,
                           decoration: const InputDecoration(
                             hintText: 'Confirm password',
+                            suffix: InkWell(
+                              // onTap:_togglePasswordView,
+                              child: Icon(Icons.visibility),
+                            ),
                           ),
                         ),
                       ),
