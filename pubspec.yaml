@@ -35,6 +35,7 @@ dependencies:
   pin_code_fields: ^7.1.0
   circular_profile_avatar: ^1.0.8
   flutter_custom_clippers: ^1.1.2
+  flutter_launcher_icons: ^0.9.0
 
 
 dev_dependencies:
@@ -75,7 +76,7 @@ flutter:
         - asset: fonts/Poppins-light.ttf
         - asset: fonts/Poppins-SemiBold.ttf
         - asset: fonts/Poppins-Bold.ttf
-        - style: italic
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

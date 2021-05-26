@@ -18,12 +18,12 @@ class _CreateAccState extends State<CreateAcc> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(
-        child: Container(
+        child: Expanded(
           child: Column(
             children: <Widget>[
               Header(),
 
-              Expanded(child: InputWrapper(),),
+              InputWrapper(),
 
             ],
           ),

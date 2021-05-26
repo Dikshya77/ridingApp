@@ -19,10 +19,12 @@ class _InputWrapperState extends State<InputWrapper> {
     const activeColor = Colors.green;
     const inactiveColor = Colors.white;
     return Container(
+
       child: Column(
         children: <Widget>[
 
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -65,6 +67,7 @@ class _InputWrapperState extends State<InputWrapper> {
           ),
 
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             decoration: BoxDecoration(
               color: Colors.white,
 

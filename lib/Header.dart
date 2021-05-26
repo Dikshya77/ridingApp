@@ -11,50 +11,46 @@ class Header extends StatelessWidget {
 
         ),
         child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 60.0),
           height: 200,
           color:  Color(0xFF58BE3F),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 40.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                IconButton(
-                  icon: Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
-                    size: 20.0,
-                  ),
-                  onPressed: (){
-                    Navigator.pop(context);
-                  },),
-
-                Padding(
-                  padding: const EdgeInsets.only(top: 10.0,right: 90.0),
-                  child: Column(
-                    children: <Widget>[
-                      Text('WELCOM',style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 50.0),
-                        child: Text('E',style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        ),
-                      ),
-
-                    ],
-
-                  ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                  size: 20.0,
                 ),
-              ],
+                onPressed: (){
+                  Navigator.pop(context);
+                },),
 
-            ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0,vertical: 15.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('WELCOM',style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                    Text('E',style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+
+                  ],
+
+                ),
+              ),
+            ],
+
           ),
         ),
       ),
